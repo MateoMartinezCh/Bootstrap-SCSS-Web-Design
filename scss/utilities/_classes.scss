@@ -1,0 +1,6 @@
+.text-principal {
+	color: $colorPrincipal;
+}
+.nav-link:hover {
+	color: lighten($colorPrincipal, 20%);
+}

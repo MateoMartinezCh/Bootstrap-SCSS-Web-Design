@@ -1,0 +1,12 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+/* UTILITIES */
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "base/reset";
+@import "utilities/classes";
+/* LAYOUT */
+@import "layout/body";
+@import "layout/nav";
+@import "layout/section";
+@import "layout/main";
+@import "layout/footer";
