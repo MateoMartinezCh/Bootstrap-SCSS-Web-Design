@@ -1,18 +1,21 @@
 body#principal {
 	background-image: url("../img/hero_evilbackground.webp");
+	@include mainbackground();
 	width: 100%;
 	min-height: 100vh;
-	//overflow: hidden;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	overflow: hidden;
 }
 body#contacto {
 	min-height: 100vh;
 	//overflow: hidden;
 	background: url("../img/fondocontacto2.jpg"), lighten($negro, 25%); //rgba(32, 27, 17, 100); //linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(32, 27, 17, 1) 100%);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
+	@include mainbackground();
+	background-blend-mode: multiply;
+}
+body#registro {
+	min-height: 100vh;
+	//overflow: hidden;
+	background: url("../img/fondo_registro.jpg"), lighten($negro, 35%); //rgba(32, 27, 17, 100); //linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(32, 27, 17, 1) 100%);
+	@include mainbackground();
 	background-blend-mode: multiply;
 }
