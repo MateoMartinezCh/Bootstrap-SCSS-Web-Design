@@ -1,6 +1,26 @@
 .text-principal {
 	color: $colorPrincipal;
 }
+
 .nav-link:hover {
 	color: lighten($colorPrincipal, 20%);
+}
+.iconbackground {
+	min-width: 60px;
+	max-width: 60px;
+	height: 60px;
+	padding: 10px;
+	text-align: center;
+}
+.bordebajocustom {
+	border-bottom: 2px solid $colorPrincipal;
+}
+.noresize {
+	resize: none;
+}
+.top-45 {
+	top: 45%;
+}
+.start-40 {
+	left: 40%;
 }

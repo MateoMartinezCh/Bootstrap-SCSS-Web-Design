@@ -1,12 +1,15 @@
-@import "../node_modules/bootstrap/dist/css/bootstrap.css";
 /* UTILITIES */
 @import "utilities/variables";
+@import "utilities/classes";
 @import "utilities/mixins";
 @import "base/reset";
-@import "utilities/classes";
 /* LAYOUT */
 @import "layout/body";
 @import "layout/nav";
 @import "layout/section";
 @import "layout/main";
 @import "layout/footer";
+
+// Importar todo el resto de Bootstrap
+@import "~bootstrap/scss/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
