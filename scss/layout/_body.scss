@@ -14,7 +14,7 @@ body#contacto {
 }
 body#registro {
 	min-height: 100vh;
-	//overflow: hidden;
+	overflow: hidden;
 	background: url("../img/fondo_registro.jpg"), lighten($negro, 35%); //rgba(32, 27, 17, 100); //linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(32, 27, 17, 1) 100%);
 	@include mainbackground();
 	background-blend-mode: multiply;

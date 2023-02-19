@@ -18,7 +18,7 @@
 				</a>
 
 				<button
-					class="navbar-toggler text-primary fs-1 shadow-none"
+					class="navbar-toggler fs-1 shadow-none border-0"
 					type="button"
 					data-bs-toggle="collapse"
 					data-bs-target="#navbarText"
@@ -26,14 +26,19 @@
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					<i class="navbar-toggler-icon bi bi-list"></i>
+					<i class="bi bi-list text-primary"></i>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarText">
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-						<a class="nav-link" aria-current="page" href="index.html">Home</a>
-						<a class="nav-link" href="#">Otros Torneos</a>
-						<a class="nav-link" href="contacto.html">Contacto</a>
-						<a class="nav-link" href="#">Quienes Somos</a>
+						<a
+							class="nav-link text-primary"
+							aria-current="page"
+							href="index.html"
+							>Home</a
+						>
+						<a class="nav-link text-primary" href="#">Otros Torneos</a>
+						<a class="nav-link text-primary" href="contacto.html">Contacto</a>
+						<a class="nav-link text-primary" href="#">Quienes Somos</a>
 					</ul>
 				</div>
 			</div>
@@ -48,7 +53,7 @@
 					</p>
 				</div>
 				<div
-					class="informacion mt-5 mb-5 col-md-6 col-sm-12 text-primary align-items-center justify-content-center"
+					class="informacion mt-5 mb-5 col-md-6 col-sm-12 text-primary align-items-center justify-content-center animate__animated animate__backInLeft"
 				>
 					<div class="row justify-content-center p-2">
 						<div
@@ -71,46 +76,77 @@
 					</div>
 				</div>
 				<div class="col-sm-2 col-md-1"></div>
-				<div class="formulariodecontacto mt-5 col-md-4 col-sm-8 bg-white p-3">
-					<form>
+				<div
+					class="formulariodecontacto mt-5 col-md-4 col-sm-8 bg-white rounded-3 p-3 animate__animated animate__backInRight"
+				>
+					<form action="#" method="get">
 						<h2 class="text-primary">Formulario de registro</h2>
 
-						<div class="form-floating mt-2º">
+						<div class="input-group mb-3">
+							<span class="input-group-text" id="basic-addon1">@</span>
 							<input
 								type="text"
 								class="form-control"
-								placeholder="name@example.com"
+								placeholder="Escribe aquí tu nickname"
+								aria-label="Username"
+								aria-describedby="basic-addon1"
 							/>
-							<label>Nombre Completo</label>
+						</div>
+
+						<div class="input-group mb-3">
+							<span class="input-group-text" id="basic-addon1"
+								><i class="bi bi-person"></i
+							></span>
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Nombre y apellidos"
+								aria-label="Username"
+								aria-describedby="basic-addon1"
+							/>
+						</div>
+						<div class="input-group mb-3">
+							<span class="input-group-text" id="basic-addon1"
+								><i class="bi bi-envelope-check"></i
+							></span>
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Correo"
+								aria-label="Username"
+								aria-describedby="basic-addon1"
+							/>
+						</div>
+						<div class="input-group mb-3">
+							<input
+								class="form-control w-75"
+								type="text"
+								placeholder="Elije el color de tu equipo"
+								aria-label="Disabled input example"
+								disabled
+							/>
+							<input
+								type="color"
+								class="form-control form-control-color w-25"
+								value="#FF00FF"
+								title="Elije color"
+							/>
 						</div>
 						<select class="form-select">
-							<option selected>Selecciona Torneo</option>
+							<option selected disabled>
+								Selecciona el torneo al que quieres participar
+							</option>
 							<option value="1">Torneo de hogwarts legacy</option>
 							<option value="2">Torneo de brawlhalla</option>
 							<option value="3">Torneo de valorant</option>
 						</select>
-						<div class="form-floating mt-2º">
-							<input
-								type="email"
-								class="form-control"
-								placeholder="name@example.com"
-							/>
-							<label>Correo</label>
-						</div>
-						<div class="form-floating mt-2º">
-							<textarea
-								class="form-control noresize"
-								placeholder="Leave a comment here"
-								style="height: 100px"
-							></textarea>
-							<label>Escribe tu mensaje..</label>
-						</div>
 						<div class="form-floating mt-2">
-							<input
-								class="bg-secondary p-2 rounded-3 text-white fw-bold"
+							<button
+								class="p-2 btn btn-primary rounded-3 text-white fw-bold"
 								type="submit"
-								value="Enviar comentario"
-							/>
+							>
+								Enviar comentario
+							</button>
 						</div>
 					</form>
 				</div>
@@ -119,112 +155,3 @@
 		<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 	</body>
 </html>
-<!-- <main id="contacto_form">
-			<div class="contenido">
-				<h2 class="">Contáctanos!</h2>
-				<p>
-					Haremos todo lo posible para mejorar tu experiencia en nuestra web
-				</p>
-			</div>
-			<div class="contenedor">
-				<div class="informacion">
-					<div class="caja">
-						<div class="icono">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="22"
-								height="22"
-								fill="currentColor"
-								class="bi bi-geo-alt-fill"
-								viewBox="0 0 16 16"
-							>
-								<path
-									d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-								/>
-							</svg>
-						</div>
-						<div class="texto">
-							<h3>Direccion</h3>
-							<p>
-								50.078606, 14.416338 <br />
-								Nueva, Praga, Chequia
-							</p>
-						</div>
-					</div>
-					<div class="caja">
-						<div class="icono">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="22"
-								height="22"
-								fill="currentColor"
-								class="bi bi-telephone-fill"
-								viewBox="0 0 16 16"
-							>
-								<path
-									fill-rule="evenodd"
-									d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-								/>
-							</svg>
-						</div>
-						<div class="texto">
-							<h3>Teléfono</h3>
-							<p>111-333-555-777-999</p>
-						</div>
-					</div>
-					<div class="caja">
-						<div class="icono">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="22"
-								height="22"
-								fill="currentColor"
-								class="bi bi-envelope-fill"
-								viewBox="0 0 16 16"
-							>
-								<path
-									d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
-								/>
-							</svg>
-						</div>
-						<div class="texto">
-							<h3>Email</h3>
-							<p>contacto@laparilladeoro.com</p>
-						</div>
-					</div>
-				</div>
-				<div class="formulariodecontacto">
-					<form>
-						<h2>Enviar mensaje</h2>
-
-						<div class="form-floating">
-							<input
-								type="text"
-								class="form-control myform-control"
-								placeholder="name@example.com"
-							/>
-							<label>Nombre Completo</label>
-						</div>
-						<div class="form-floating">
-							<input
-								type="email"
-								class="form-control myform-control"
-								placeholder="name@example.com"
-							/>
-							<label>Correo</label>
-						</div>
-						<div class="form-floating">
-							<textarea
-								class="form-control myform-control"
-								placeholder="Leave a comment here"
-								style="height: 100px"
-							></textarea>
-							<label>Escribe tu mensaje..</label>
-						</div>
-						<div class="form-floating">
-							<input type="submit" value="Enviar comentario" />
-						</div>
-					</form>
-				</div>
-			</div>
-		</main> -->
