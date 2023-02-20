@@ -3750,6 +3750,29 @@
   width: 300px;
 }
 
+.sombra {
+  -webkit-box-shadow: 10px 10px 37px -8px #fff;
+  -moz-box-shadow: 10px 10px 37px -8px #fff;
+  box-shadow: 10px 10px 37px -8px #fff;
+}
+
+.sombraprimary {
+  -webkit-box-shadow: 10px 10px 37px -19px #f4b966;
+  -moz-box-shadow: 10px 10px 37px -19px #f4b966;
+  box-shadow: 10px 10px 37px -19px #f4b966;
+}
+
+.letra {
+  font-size: 25px;
+  transition: 0.8s;
+}
+
+.letra:hover {
+  font-size: 25px;
+  color: #f4b966;
+  transform: rotateY(360deg);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -3769,7 +3792,7 @@ body#principal {
 
 body#contacto {
   min-height: 100vh;
-  background: url("../img/fondocontacto2.jpg"), #404040;
+  background: url("../img/fondocontacto.jpg"), #404040;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3785,9 +3808,10 @@ body#registro {
   background-blend-mode: multiply;
 }
 
+body#sobreNosotros,
 body#listadoTorneos {
   min-height: 100vh;
-  background-color: black;
+  background-image: url("../img/sobre nosotros/sobrenosotrosbg.png");
 }
 
 /*!

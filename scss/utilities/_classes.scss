@@ -30,6 +30,25 @@
 .w-65 {
 	width: 65%;
 }
-.imgcaratula{
+.imgcaratula {
 	width: 300px;
+}
+.sombra {
+	-webkit-box-shadow: 10px 10px 37px -8px $blanco;
+	-moz-box-shadow: 10px 10px 37px -8px $blanco;
+	box-shadow: 10px 10px 37px -8px $blanco;
+}
+.sombraprimary {
+	-webkit-box-shadow: 10px 10px 37px -19px $colorPrincipal;
+	-moz-box-shadow: 10px 10px 37px -19px $colorPrincipal;
+	box-shadow: 10px 10px 37px -19px $colorPrincipal;
+}
+.letra {
+	font-size: 25px;
+	transition: 0.8s;
+}
+.letra:hover {
+	font-size: 25px;
+	color: $colorPrincipal;
+	transform: rotateY(360deg);
 }
