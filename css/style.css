@@ -3734,8 +3734,20 @@
   top: 45%;
 }
 
-.start-40 {
-  left: 40%;
+.start-45 {
+  left: 45%;
+}
+
+.cajablur {
+  backdrop-filter: blur(15px);
+}
+
+.w-65 {
+  width: 65%;
+}
+
+.imgcaratula {
+  width: 300px;
 }
 
 * {
@@ -3766,12 +3778,16 @@ body#contacto {
 
 body#registro {
   min-height: 100vh;
-  overflow: hidden;
   background: url("../img/fondo_registro.jpg"), #595959;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
+}
+
+body#listadoTorneos {
+  min-height: 100vh;
+  background-color: black;
 }
 
 /*!
