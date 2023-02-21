@@ -3773,6 +3773,11 @@
   transform: rotateY(360deg);
 }
 
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -3780,18 +3785,20 @@
 }
 
 /* LAYOUT */
+body {
+  min-height: 100vh;
+}
+
 body#principal {
   background-image: url("../img/hero_evilbackground.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
-  min-height: 100vh;
   overflow: hidden;
 }
 
 body#contacto {
-  min-height: 100vh;
   background: url("../img/fondocontacto.jpg"), #404040;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3800,7 +3807,6 @@ body#contacto {
 }
 
 body#registro {
-  min-height: 100vh;
   background: url("../img/fondo_registro.jpg"), #595959;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3810,7 +3816,6 @@ body#registro {
 
 body#sobreNosotros,
 body#listadoTorneos {
-  min-height: 100vh;
   background-image: url("../img/sobre nosotros/sobrenosotrosbg.png");
 }
 

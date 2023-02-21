@@ -1,19 +1,19 @@
+body {
+	min-height: 100vh;
+}
 body#principal {
 	background-image: url("../img/hero_evilbackground.webp");
 	@include mainbackground();
 	width: 100%;
-	min-height: 100vh;
 	overflow: hidden;
 }
 body#contacto {
-	min-height: 100vh;
 	//overflow: hidden;
 	background: url("../img/fondocontacto.jpg"), lighten($negro, 25%); //rgba(32, 27, 17, 100); //linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(32, 27, 17, 1) 100%);
 	@include mainbackground();
 	background-blend-mode: multiply;
 }
 body#registro {
-	min-height: 100vh;
 	//max-width: 100vw;
 	//max-height: 100vh;
 	//overflow: hidden;
@@ -24,6 +24,5 @@ body#registro {
 
 body#sobreNosotros,
 body#listadoTorneos {
-	min-height: 100vh;
 	background-image: url("../img/sobre nosotros/sobrenosotrosbg.png");
 }
