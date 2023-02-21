@@ -1,10 +1,6 @@
 .text-principal {
 	color: $colorPrincipal;
 }
-
-.nav-link:hover {
-	color: lighten($colorPrincipal, 20%);
-}
 .iconbackground {
 	min-width: 60px;
 	max-width: 60px;
@@ -55,4 +51,35 @@
 .logo {
 	width: 100px;
 	height: 100px;
+}
+.botoncta {
+	align-items: center;
+	background-image: linear-gradient(
+		144deg,
+		$colorPrincipal,
+		$negro 30%,
+		$negro 70%,
+		$colorPrincipal
+	);
+	box-shadow: $colorPrincipal 0 2px 30px -5px;
+	font-family: Phantomsans, sans-serif;
+	max-width: 100%;
+	min-width: 100px;
+	transition: all 0.3s;
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+	&:active {
+		transform: scale(0.9);
+	}
+	&:hover .botontext {
+		background: none;
+	}
+}
+.botontext {
+	background-color: $negro;
+	padding: 8px 16px;
+	border-radius: 6px;
+	transition: 300ms;
 }
