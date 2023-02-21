@@ -3,21 +3,7 @@
 	justify-content: center;
 	align-items: center;
 }
-@mixin desktop {
-	@media screen and (max-width: #{desktop}) {
-		@content;
-	}
-}
-@mixin tablets {
-	@media screen and (max-width: #{tablets}) {
-		@content;
-	}
-}
-@mixin phones {
-	@media screen and (max-width: #{phones}) {
-		@content;
-	}
-}
+
 @mixin mainbackground() {
 	
 	background-repeat: no-repeat;
